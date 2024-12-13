@@ -45,7 +45,7 @@ public class CreateContacttest extends BaseClass {
 		UtilityClassObject.getTest().log(Status.INFO, "read data from excel");
 		String	lastname =eLib.getDataFromExcel("contact", 1, 2)+ jLib.getRandomNumber();
 		System.out.println(lastname); 
-        UtilityClassObject.getTest().log(Status.INFO, "navigate to contact");
+        UtilityClassObject.getTest().log(Status.INFO, "navigate to contact PAGE");
 		HomePage h = new HomePage(driver);
 		h.getContactlink().click();
 		h.getImgcontact().click();
